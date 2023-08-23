@@ -41,6 +41,6 @@
 16. cat or tail -f run/atm.log.xxxxxx-xxxxxx
 
 # TaiESM1 其他資訊
-## 變數參考 https://www.cesm.ucar.edu/community-projects/lens2/output-variable
-## 
+### 變數參考 https://www.cesm.ucar.edu/community-projects/lens2/output-variable
+
 

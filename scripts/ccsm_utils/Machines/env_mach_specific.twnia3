@@ -1,0 +1,14 @@
+#! /bin/csh -f
+# -------------------------------------------------------------------------
+# Bluefire build specific settings
+# -------------------------------------------------------------------------
+source /opt/ohpc/admin/lmod/8.1.18/init/csh
+setenv MODULEPATH /home/yhtseng00/modules:/opt/ohpc/Taiwania3/modulefiles:/opt/ohpc/Taiwania3/pkg/lmod/comp/intel/2020:/opt/ohpc/pub/modulefiles
+module purge
+module load cmake/3.15.4 compiler/intel/2020u4 IntelMPI/2020 netcdf-4.8.0-NC4-intel2020-impi pnetcdf-1.8.1-intel2020-impi
+module list
+
+# -------------------------------------------------------------------------
+# Build and runtime environment variables - edit before the initial build 
+# -------------------------------------------------------------------------
+limit datasize  unlimited

@@ -1,0 +1,16 @@
+#! /bin/csh -f
+# -------------------------------------------------------------------------
+# Bluefire build specific settings
+# -------------------------------------------------------------------------
+source /cm/local/apps/environment-modules/3.2.10/Modules/default/init/csh
+setenv MODULEPATH "/cm/shared/modulefiles:/work1/j07hsu00/bin/modulefiles"
+module purge
+module load intel/2018_u1
+module load hdf5/1.10.1
+module load netcdf/4.6.1_intel-2018_hdf5-1.10.1
+module load openmpi/3.0.0_intel-2018
+module list
+# -------------------------------------------------------------------------
+# Build and runtime environment variables - edit before the initial build 
+# -------------------------------------------------------------------------
+limit datasize  unlimited

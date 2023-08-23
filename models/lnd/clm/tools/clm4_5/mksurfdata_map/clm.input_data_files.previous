@@ -1,0 +1,2 @@
+#! /bin/csh -f
+set CSMDATA = /home/j07hsu00/taiesm/inputdata

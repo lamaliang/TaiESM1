@@ -1,0 +1,37 @@
+clm_varctl.o : clm_varctl.F90 clm_varpar.o shr_sys_mod.o shr_kind_mod.o 
+clm_varpar.o : clm_varpar.F90 shr_kind_mod.o 
+fileutils.o : fileutils.F90 shr_sys_mod.o clm_varctl.o shr_file_mod.o 
+mkCH4inversionMod.o : mkCH4inversionMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o 
+mkVICparamsMod.o : mkVICparamsMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o 
+mkagfirepkmonthMod.o : mkagfirepkmonthMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkindexmapMod.o mkgridmapMod.o mkvarpar.o 
+mkchecksMod.o : mkchecksMod.F90 shr_kind_mod.o shr_sys_mod.o 
+mkdiagnosticsMod.o : mkdiagnosticsMod.F90 shr_kind_mod.o mkgridmapMod.o mkvarpar.o 
+mkdomainMod.o : mkdomainMod.F90 mkgridmapMod.o shr_kind_mod.o nanMod.o mkutilsMod.o mkvarpar.o 
+mkfileMod.o : mkfileMod.F90 shr_sys_mod.o shr_kind_mod.o mkharvestMod.o mksoilMod.o mkncdio.o mkvarctl.o mkdomainMod.o mkglcmecMod.o mkpftMod.o fileutils.o mkurbanparMod.o mkvarpar.o 
+mkgdpMod.o : mkgdpMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o 
+mkglcmecMod.o : mkglcmecMod.F90 shr_sys_mod.o shr_kind_mod.o mkutilsMod.o mkvarctl.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkvarpar.o 
+mkgridmapMod.o : mkgridmapMod.F90 shr_kind_mod.o mkutilsMod.o mkvarpar.o mkvarctl.o 
+mkharvestMod.o : mkharvestMod.F90 shr_sys_mod.o shr_kind_mod.o shr_string_mod.o mkvarctl.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkvarpar.o 
+mkindexmapMod.o : mkindexmapMod.F90 mkgridmapMod.o shr_kind_mod.o mkncdio.o 
+mklaiMod.o : mklaiMod.F90 shr_sys_mod.o shr_kind_mod.o mkncdio.o mkvarctl.o mkpftMod.o mkdomainMod.o mkgridmapMod.o mkvarpar.o 
+mklanwatMod.o : mklanwatMod.F90 shr_sys_mod.o shr_kind_mod.o mkncdio.o mkvarctl.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o mkchecksMod.o mkvarpar.o 
+mkncdio.o : mkncdio.F90 shr_kind_mod.o shr_sys_mod.o 
+mkpeatMod.o : mkpeatMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o 
+mkpftMod.o : mkpftMod.F90 shr_sys_mod.o shr_kind_mod.o shr_string_mod.o mkncdio.o mkvarctl.o mkdomainMod.o mkgridmapMod.o fileutils.o mkvarpar.o 
+mksoilMod.o : mksoilMod.F90 shr_sys_mod.o shr_kind_mod.o mkncdio.o mkvarctl.o mkdomainMod.o mkgridmapMod.o fileutils.o mkvarpar.o 
+mksurfdat.o : mksurfdat.F90 shr_kind_mod.o mkharvestMod.o mktopostatsMod.o mkpeatMod.o mkvocefMod.o mksoilMod.o mkutilsMod.o mkvarctl.o mkagfirepkmonthMod.o mkglcmecMod.o mkgdpMod.o mkurbanparMod.o mkVICparamsMod.o mklaiMod.o mkurbanparCommonMod.o mkncdio.o mkdomainMod.o mkpftMod.o mkCH4inversionMod.o fileutils.o mklanwatMod.o mkfileMod.o nanMod.o mkvarpar.o 
+mktopostatsMod.o : mktopostatsMod.F90 shr_kind_mod.o mkchecksMod.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkdiagnosticsMod.o 
+mkurbanparCommonMod.o : mkurbanparCommonMod.F90 shr_kind_mod.o mkvarctl.o shr_sys_mod.o mkncdio.o mkdomainMod.o mkgridmapMod.o mkvarpar.o 
+mkurbanparMod.o : mkurbanparMod.F90 shr_kind_mod.o mkutilsMod.o mkvarctl.o shr_sys_mod.o mkurbanparCommonMod.o mkncdio.o mkdomainMod.o mkindexmapMod.o mkgridmapMod.o mkvarpar.o 
+mkutilsMod.o : mkutilsMod.F90 shr_kind_mod.o shr_const_mod.o mkncdio.o 
+mkvarctl.o : mkvarctl.F90 shr_kind_mod.o 
+mkvarpar.o : mkvarpar.F90 shr_kind_mod.o shr_const_mod.o 
+mkvocefMod.o : mkvocefMod.F90 shr_sys_mod.o shr_kind_mod.o mkncdio.o mkvarctl.o mkdomainMod.o mkgridmapMod.o mkvarpar.o 
+nanMod.o : nanMod.F90 shr_kind_mod.o 
+shr_const_mod.o : shr_const_mod.F90 shr_kind_mod.o 
+shr_file_mod.o : shr_file_mod.F90 shr_kind_mod.o shr_sys_mod.o shr_log_mod.o 
+shr_kind_mod.o : shr_kind_mod.F90  
+shr_log_mod.o : shr_log_mod.F90 shr_kind_mod.o 
+shr_string_mod.o : shr_string_mod.F90 shr_kind_mod.o shr_sys_mod.o shr_timer_mod.o shr_log_mod.o 
+shr_sys_mod.o : shr_sys_mod.F90 shr_kind_mod.o shr_log_mod.o 
+shr_timer_mod.o : shr_timer_mod.F90 shr_kind_mod.o shr_sys_mod.o shr_log_mod.o 

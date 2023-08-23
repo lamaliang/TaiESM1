@@ -35,3 +35,7 @@
 
 ### 將job丟置排程系統上
 14. ./f09.B2000.taiesm1-test1.submit
+
+### 檢查模擬情況 
+15. cat or tail -f run/cesm.log.xxxxxx-xxxxxx
+16. cat or tail -f run/atm.log.xxxxxx-xxxxxx

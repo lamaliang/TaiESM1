@@ -43,4 +43,17 @@
 # TaiESM1 其他資訊
 ### 變數參考 https://www2.cesm.ucar.edu/models/cesm2/atmosphere/docs/ug6/hist_flds_f2000.html
 
+#### compset list ###
+                        TaiESM1.0 README
+Standard supported compsets:
 
+Coupled (f09_g16 only)
+   B_2000
+   B_1850
+   B_1850-2000
+   B_SSP126, B_SSP245, B_SSP370, B_SSP585
+
+Prescribed-SST (f09_f09 only)
+   F_1850
+   F_2000
+   F_1850-2000

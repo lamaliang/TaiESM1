@@ -6,7 +6,7 @@
 
 ### 複製創建case的shell script至taiesm_work資料夾  
  3. cd taiesm_work  
- 4. cp /work/j07hsu00/taiesm_class/setup.case.csh  
+ 4. cp /work/j07hsu00/taiesm_class/setup.case.csh . 
 
 ### 建立模擬case，並且檢查是否有問題  
 5. cat setup.case.csh  

@@ -44,9 +44,7 @@
 ### 變數參考 https://www2.cesm.ucar.edu/models/cesm2/atmosphere/docs/ug6/hist_flds_f2000.html
 
 #### compset list ###
-                        TaiESM1.0 README
 Standard supported compsets:
-
 Coupled (f09_g16 only)
    B_2000
    B_1850

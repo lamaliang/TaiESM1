@@ -27,11 +27,11 @@
 ### compiler TaiESM1  
 11. ./f09.B2000.taiesm1-test1.build
 
-### 使用排成軟體將模擬城市送出去  
+### 使用排成軟體將模擬程式送出去  
 12. vi f09.B2000.taiesm1-test1.run
 
-### 本次Tutorial 有申請專屬節點，可以直接使用
-13. 修改第六行 #SBATCH -p '__ct2k__' 為 #SBATCH -p '__dc-MST108251-03__'
+### 根據cpu數量使用不同的queue 
+13. 修改第六行 #SBATCH -p '__ct2k__' or '__ct560__'等等之類的
 
 ### 將job丟置排程系統上
 14. ./f09.B2000.taiesm1-test1.submit
